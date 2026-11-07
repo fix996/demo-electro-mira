@@ -10,7 +10,8 @@
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="data.js" defer></script>
-  <script src="app.js" defer></script>
+  <script src="cart.js" defer></script>
+  <script src="catalog.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -19,20 +20,20 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#inicio" aria-label="mira electro, inicio"><img src="logo.svg" width="40" height="40" alt=""><span>mira<span class="brand-dot">.</span><small>electro</small></span></a>
-      <nav aria-label="Navegación principal"><a href="#catalogo">Productos</a><a href="#local">El local</a><a href="#comprar">Cómo comprar</a><a href="#contacto">Contacto</a></nav>
+      <nav aria-label="Navegación principal"><a href="#catalogo">Productos</a><a href="#local">El local</a><a href="#opiniones">Opiniones</a><a href="#comprar">Cómo comprar</a><a href="#contacto">Contacto</a></nav>
       <button type="button" class="cart-trigger" data-open-cart aria-label="Abrir carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L21 8H6M10 20h.01M18 20h.01"/></svg><span>Carrito</span><strong id="cart-count" aria-live="polite">0</strong></button>
     </div>
   </header>
 
   <main id="contenido">
     <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-copy"><p class="eyebrow light">TECNOLOGÍA PARA LA VIDA REAL / DEMO</p><h1 id="hero-title">Todo lo que usás.<br><em>En un solo lugar.</em></h1><p>Celulares, computadoras, entretenimiento y hogar. Explorá el catálogo y armá un pedido de ejemplo en pocos pasos.</p><a class="hero-cta" href="#catalogo">Explorar productos <span aria-hidden="true">↗</span></a><div class="hero-foot"><span>01 / 08</span><span>Productos ilustrativos</span></div></div>
+      <div class="hero-copy"><p class="eyebrow light">TECNOLOGÍA PARA LA VIDA REAL / DEMO</p><h1 id="hero-title">Todo lo que usás.<br><em>En un solo lugar.</em></h1><p>Celulares, computadoras, entretenimiento y hogar. Explorá el catálogo y abrí cada producto para conocerlo de cerca.</p><a class="hero-cta" href="#catalogo">Explorar productos <span aria-hidden="true">↗</span></a><div class="hero-foot"><span>01 / 08</span><span>Productos ilustrativos</span></div></div>
       <div class="hero-media"><img src="assets/notebook.jpg" width="960" height="640" alt="Notebook plateada ilustrativa con pantalla azul" fetchpriority="high"><div class="hero-floating"><span>PARA TRABAJAR, ESTUDIAR Y DISFRUTAR</span><strong>Elegí a tu ritmo.</strong></div></div>
     </section>
 
     <section class="steps wrap" id="como-funciona" aria-label="Cómo funciona la demo">
       <div><span>01</span><p><strong>Buscá lo tuyo</strong><small>Filtrá por rubro o buscá un equipo.</small></p></div>
-      <div><span>02</span><p><strong>Miralo de cerca</strong><small>Revisá su ficha y sus características.</small></p></div>
+      <div><span>02</span><p><strong>Miralo de cerca</strong><small>Entrá a su página con fotos y características.</small></p></div>
       <div><span>03</span><p><strong>Armá tu pedido</strong><small>Sumá al carrito y prepará el mensaje.</small></p></div>
     </section>
 
@@ -52,6 +53,18 @@
           <figure class="local-photo"><img src="assets/local-exterior.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Fachada ilustrativa de una pequeña tienda de tecnología con frente azul"><figcaption><span>01 / FACHADA</span><strong>Encontranos cerca.</strong><small>Imagen ilustrativa, no corresponde a un local real.</small></figcaption></figure>
           <figure class="local-photo"><img src="assets/local-interior.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Interior ilustrativo de una tienda con mostrador y estantes de productos electrónicos"><figcaption><span>02 / INTERIOR</span><strong>Conocé el espacio.</strong><small>Imagen ilustrativa, no corresponde a un local real.</small></figcaption></figure>
         </div>
+      </div>
+    </section>
+
+    <section class="community-section" id="opiniones" aria-labelledby="community-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">LA COMUNIDAD / DEMO</p><h2 id="community-title">De la tienda a cada casa.</h2></div><p>Una muestra de cómo se pueden presentar fotos y opiniones de compradores. Las imágenes, personas y frases de esta sección son ficticias.</p></div>
+        <div class="community-grid">
+          <figure class="community-card"><img src="assets/opinion-notebook.jpg" width="720" height="720" loading="lazy" decoding="async" alt="Imagen ilustrativa de una persona usando una notebook en su casa"><figcaption><span>FOTO Y OPINIÓN DE EJEMPLO</span><blockquote>“La notebook me viene bárbaro para estudiar y trabajar desde casa.”</blockquote><div><cite>Martina · perfil ficticio</cite><a href="productos/notebook-aire.html">Ver notebook ↗</a></div></figcaption></figure>
+          <figure class="community-card"><img src="assets/opinion-cafetera.jpg" width="720" height="720" loading="lazy" decoding="async" alt="Imagen ilustrativa de una cafetera en una cocina"><figcaption><span>FOTO Y OPINIÓN DE EJEMPLO</span><blockquote>“Es compacta y ahora tengo mi pausa de café todos los días.”</blockquote><div><cite>Lucas · perfil ficticio</cite><a href="productos/cafetera-espresso-mini.html">Ver cafetera ↗</a></div></figcaption></figure>
+          <figure class="community-card"><img src="assets/opinion-tv.jpg" width="720" height="720" loading="lazy" decoding="async" alt="Imagen ilustrativa de una persona mirando televisión en casa"><figcaption><span>FOTO Y OPINIÓN DE EJEMPLO</span><blockquote>“La elegimos para disfrutar películas en familia.”</blockquote><div><cite>Sol · perfil ficticio</cite><a href="productos/smart-tv-vista.html">Ver Smart TV ↗</a></div></figcaption></figure>
+        </div>
+        <p class="community-note">No son publicaciones ni reseñas reales de Instagram. En una web comercial se usarían testimonios autorizados por sus compradores.</p>
       </div>
     </section>
 
@@ -78,9 +91,8 @@
     <section class="closing"><div class="wrap closing-inner"><div><p class="eyebrow light">UNA COMPRA MÁS CLARA</p><h2>Todo listo para consultar.</h2><p>Sumá lo que te interesa, revisá el total ilustrativo y prepará un mensaje. En una tienda real se confirmarían precio y disponibilidad antes de cerrar el pedido.</p></div><button type="button" data-open-cart>Ver mi carrito <span aria-hidden="true">↗</span></button></div></section>
   </main>
 
-  <footer class="site-footer wrap"><a class="footer-brand" href="#inicio"><img src="logo.svg" width="34" height="34" alt=""><span>mira.</span></a><p>Demo conceptual no oficial. Marca, fotos, productos, precios, ubicación, horarios y condiciones ilustrativos. No se realizan compras, pagos ni reservas de stock.</p><a href="#inicio">Volver arriba ↑</a></footer>
+  <footer class="site-footer wrap"><a class="footer-brand" href="#inicio"><img src="logo.svg" width="34" height="34" alt=""><span>mira.</span></a><p>Demo conceptual no oficial. Marca, fotos, opiniones, productos, precios, ubicación, horarios y condiciones ilustrativos. No se realizan compras, pagos ni reservas de stock.</p><a href="#inicio">Volver arriba ↑</a></footer>
 
-  <dialog id="product-dialog" aria-labelledby="product-dialog-title"><div class="dialog-top"><span>FICHA DEL PRODUCTO / DEMO</span><button type="button" class="dialog-close" id="close-product" aria-label="Cerrar ficha">×</button></div><div id="product-content"></div></dialog>
   <dialog id="cart-dialog" aria-labelledby="cart-title"><div class="cart-head"><div><p class="eyebrow">TU SELECCIÓN / DEMO</p><h2 id="cart-title">Mi carrito</h2></div><button type="button" class="dialog-close" id="close-cart" aria-label="Cerrar carrito">×</button></div><div id="cart-content"></div></dialog>
   <p id="action-status" class="sr-only" role="status" aria-live="polite"></p>
 </body>
