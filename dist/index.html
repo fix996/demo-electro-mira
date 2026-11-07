@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f7fb">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="Demo conceptual de una tienda de tecnología y electrodomésticos con catálogo y carrito de ejemplo.">
+  <meta name="description" content="Demo conceptual de una tienda de tecnología y electrodomésticos con catálogo, carrito e información del local.">
   <title>mira. electro · Tecnología para tu día (demo)</title>
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
@@ -14,12 +14,12 @@
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <div class="demo-strip">DEMO CONCEPTUAL · Marca, productos, especificaciones y precios de ejemplo</div>
+  <div class="demo-strip">DEMO CONCEPTUAL · Marca, fotos, productos, precios y datos del local de ejemplo</div>
 
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#inicio" aria-label="mira electro, inicio"><img src="logo.svg" width="40" height="40" alt=""><span>mira<span class="brand-dot">.</span><small>electro</small></span></a>
-      <nav aria-label="Navegación principal"><a href="#catalogo">Productos</a><a href="#como-funciona">Cómo funciona</a></nav>
+      <nav aria-label="Navegación principal"><a href="#catalogo">Productos</a><a href="#local">El local</a><a href="#comprar">Cómo comprar</a><a href="#contacto">Contacto</a></nav>
       <button type="button" class="cart-trigger" data-open-cart aria-label="Abrir carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L21 8H6M10 20h.01M18 20h.01"/></svg><span>Carrito</span><strong id="cart-count" aria-live="polite">0</strong></button>
     </div>
   </header>
@@ -45,10 +45,40 @@
       <div id="empty-state" class="empty-state" hidden><strong>No encontramos productos con esa búsqueda.</strong><p>Probá con otro nombre o volvé a ver todo el catálogo.</p><button type="button" id="clear-filters">Ver todos los productos</button></div>
     </section>
 
+    <section class="local-section" id="local" aria-labelledby="local-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">CONOCÉ EL LOCAL / DEMO</p><h2 id="local-title">Un lugar cercano para elegir tecnología.</h2></div><p>Además del catálogo, una tienda puede mostrar dónde atiende y cómo es por dentro. Estas fotos fueron creadas para ilustrar la propuesta.</p></div>
+        <div class="local-gallery">
+          <figure class="local-photo"><img src="assets/local-exterior.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Fachada ilustrativa de una pequeña tienda de tecnología con frente azul"><figcaption><span>01 / FACHADA</span><strong>Encontranos cerca.</strong><small>Imagen ilustrativa, no corresponde a un local real.</small></figcaption></figure>
+          <figure class="local-photo"><img src="assets/local-interior.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Interior ilustrativo de una tienda con mostrador y estantes de productos electrónicos"><figcaption><span>02 / INTERIOR</span><strong>Conocé el espacio.</strong><small>Imagen ilustrativa, no corresponde a un local real.</small></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="buying-section wrap" id="comprar" aria-labelledby="buying-title">
+      <div class="section-heading"><div><p class="eyebrow">ANTES DE HACER TU PEDIDO</p><h2 id="buying-title">Comprar con todo claro.</h2></div><p>Esta sección muestra dónde un negocio puede explicar sus condiciones reales antes de recibir una consulta.</p></div>
+      <div class="buying-grid">
+        <article><span class="buying-number">01</span><h3>Retiro en el local</h3><p>El comercio puede confirmar cuándo estará listo el pedido para retirarlo.</p></article>
+        <article><span class="buying-number">02</span><h3>Envíos a coordinar</h3><p>Zona de entrega, costo y plazo se informan antes de confirmar la compra.</p></article>
+        <article><span class="buying-number">03</span><h3>Medios de pago</h3><p>Se pueden publicar las opciones disponibles y sus condiciones actualizadas.</p></article>
+        <article><span class="buying-number">04</span><h3>Garantía y cambios</h3><p>Cada producto puede mostrar su garantía y la política de cambios del negocio.</p></article>
+      </div>
+      <p class="buying-note">Condiciones de ejemplo para la demo. Una tienda real debe completar y confirmar esta información.</p>
+    </section>
+
+    <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+      <div class="wrap contact-layout">
+        <div class="contact-copy"><p class="eyebrow">VISITANOS / DEMO</p><h2 id="contact-title">Pasá por el local. O escribinos.</h2><p>Una página completa también ayuda a encontrar el negocio y conocer sus horarios y canales de contacto.</p>
+          <div class="contact-details"><div><span>UBICACIÓN</span><strong>Dirección del comercio</strong><small>Se completa al adaptar esta demo.</small></div><div><span>HORARIOS</span><strong>Lun a sáb · 9 a 13 y 16 a 20 h</strong><small>Horario de ejemplo; confirmar días y horas reales.</small></div><div><span>REDES SOCIALES</span><div class="social-preview"><span>Instagram ↗</span><span>Facebook ↗</span></div><small>Perfiles reales por conectar.</small></div></div>
+        </div>
+        <div class="map-card" role="img" aria-label="Mapa esquemático ilustrativo, sin dirección real"><svg viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="600" height="450" fill="#e7eefb"/><path d="M-20 90h640M-20 280h640M115-20v490M425-20v490" stroke="#fff" stroke-width="46"/><path d="M-20 90h640M-20 280h640M115-20v490M425-20v490" stroke="#c7d6f0" stroke-width="2"/><path d="M160 130h221v112H160zM470 125h95v100h-95zM160 320h205v100H160zM15 330h64v92H15z" fill="#d2e1f2"/><path d="M191 151h169v70H191zM476 143h73v65h-73zM187 340h160v62H187z" fill="#b7d5c6"/><circle cx="420" cy="277" r="34" fill="#2455f5" opacity=".12"/><path d="M420 218c-25 0-45 20-45 45 0 31 45 78 45 78s45-47 45-78c0-25-20-45-45-45z" fill="#2455f5"/><circle cx="420" cy="263" r="15" fill="#fff"/></svg><div class="map-label"><strong>Tu local, acá.</strong><span>Mapa ilustrativo · sin ubicación real</span></div></div>
+      </div>
+    </section>
+
     <section class="closing"><div class="wrap closing-inner"><div><p class="eyebrow light">UNA COMPRA MÁS CLARA</p><h2>Todo listo para consultar.</h2><p>Sumá lo que te interesa, revisá el total ilustrativo y prepará un mensaje. En una tienda real se confirmarían precio y disponibilidad antes de cerrar el pedido.</p></div><button type="button" data-open-cart>Ver mi carrito <span aria-hidden="true">↗</span></button></div></section>
   </main>
 
-  <footer class="site-footer wrap"><a class="footer-brand" href="#inicio"><img src="logo.svg" width="34" height="34" alt=""><span>mira.</span></a><p>Demo conceptual no oficial. Marca, fotos, productos, especificaciones y precios ilustrativos. No se realizan compras, pagos ni reservas de stock.</p><a href="#inicio">Volver arriba ↑</a></footer>
+  <footer class="site-footer wrap"><a class="footer-brand" href="#inicio"><img src="logo.svg" width="34" height="34" alt=""><span>mira.</span></a><p>Demo conceptual no oficial. Marca, fotos, productos, precios, ubicación, horarios y condiciones ilustrativos. No se realizan compras, pagos ni reservas de stock.</p><a href="#inicio">Volver arriba ↑</a></footer>
 
   <dialog id="product-dialog" aria-labelledby="product-dialog-title"><div class="dialog-top"><span>FICHA DEL PRODUCTO / DEMO</span><button type="button" class="dialog-close" id="close-product" aria-label="Cerrar ficha">×</button></div><div id="product-content"></div></dialog>
   <dialog id="cart-dialog" aria-labelledby="cart-title"><div class="cart-head"><div><p class="eyebrow">TU SELECCIÓN / DEMO</p><h2 id="cart-title">Mi carrito</h2></div><button type="button" class="dialog-close" id="close-cart" aria-label="Cerrar carrito">×</button></div><div id="cart-content"></div></dialog>
